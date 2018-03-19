@@ -1,0 +1,34 @@
+facebook:
+  client:
+    clientId: 468935616810310
+    clientSecret: 05149086efaa840fdf12780e303ed507
+    accessTokenUri: https://graph.facebook.com/oauth/access_token
+    userAuthorizationUri: https://www.facebook.com/dialog/oauth
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://graph.facebook.com/me
+github:
+  client:
+    clientId: 9ec63c01d90dd44ae490
+    clientSecret: 6840f783c3e2688e7ddfe664afc416d9ccb7c4be
+    accessTokenUri: https://github.com/login/oauth/access_token
+    userAuthorizationUri: https://github.com/login/oauth/authorize
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://api.github.com/user
+ownserver: 
+  client:
+    clientId: fooClientIdPassword
+    clientSecret: secret
+    accessTokenUri: http://localhost:8081/oauth-server/oauth/token
+    userAuthorizationUri: http://localhost:8081/oauth-server/oauth/authorize
+    clientAuthenticationScheme: header
+    authentication-scheme: form
+    token-name: token
+  resource:
+    userInfoUri: http://localhost:8081/oauth-server/oauth/check_token
+logging:
+  level:
+    org.springframework.security: DEBUG
